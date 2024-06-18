@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.order-button {
+  padding: 10px 20px;
+  background-color: #FF038C;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}

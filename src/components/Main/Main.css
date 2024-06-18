@@ -1,0 +1,32 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0e68c;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+  }
+  
+  .discover-button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
