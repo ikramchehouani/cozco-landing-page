@@ -1,0 +1,18 @@
+.info {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .info h2 {
+    font-size: 36px;
+  }
+  
+  .learn-more-button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
