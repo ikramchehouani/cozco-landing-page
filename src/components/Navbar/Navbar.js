@@ -9,7 +9,6 @@ const Navbar = () => (
     <div className="nav-button-container">
       <nav>
         <ul>
-          <li>Accueil</li>
           <li>Produits</li>
           <li>Où nous trouver ?</li>
         </ul>

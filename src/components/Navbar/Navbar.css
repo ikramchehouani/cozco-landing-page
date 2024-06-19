@@ -12,8 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 18px 60px;
   background-color: #FFDB82;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -58,5 +62,5 @@ nav ul li {
   border-radius: 5px;
   font-family: 'Roboto';
   font-weight: 500;
-  margin-left: 100px;
+  margin-left: 45px;
 }
