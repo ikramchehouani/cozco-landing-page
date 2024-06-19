@@ -1,7 +1,48 @@
 .footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
-  
+  background-color: #FFDB82; /* Match the background color from your image */
+  color: #000; /* Black text for readability */
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  height: 60px; /* Adjust the height as needed */
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px; /* Adjust the gap as needed */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-contact h3 {
+  color: #D7385E; /* Match the color from your image */
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #D7385E; /* Match the color from your image */
+  padding-top: 10px;
+  font-size: 14px;
+}
