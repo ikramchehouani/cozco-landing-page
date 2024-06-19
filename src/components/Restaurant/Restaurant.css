@@ -30,7 +30,7 @@
 
 .restaurant-content {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   margin: 70px 0;
@@ -87,8 +87,9 @@
 }
 
 .restaurant-image {
-  flex: 1;
-  margin-right: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .restaurant-image img {
@@ -96,4 +97,23 @@
   height: auto;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .restaurant-content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .restaurant-content .restaurant-description {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .restaurant-image {
+    max-width: 50%;
+    margin-right: 20px;
+  }
 }
