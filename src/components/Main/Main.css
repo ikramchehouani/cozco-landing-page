@@ -8,7 +8,6 @@
   src: url('../../../fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-
 body, html {
   margin: 0;
   padding: 0;
@@ -69,4 +68,40 @@ body, html {
 .hero-image img {
   max-width: 100%;
   height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    background-image: url('../../assets/pinky-background.png');
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .discover-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .hero-image {
+    display: none;
+  }
 }

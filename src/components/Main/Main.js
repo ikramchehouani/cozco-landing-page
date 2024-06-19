@@ -4,8 +4,8 @@ import './Main.css';
 const Main = () => (
   <section className="hero">
     <div className="hero-content">
-      <h1>TITRE</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1>Le soleil du Pérou en bouteille</h1>
+      <p>Fraîchement préparée en région parisienne, notre chicha morada Cozco est une invitation à découvrir les saveurs authentiques du Pérou dans chaque gorgée. Partagez avec nous un moment de pur plaisir et de gourmandise !</p>
       <button className="discover-button">En savoir plus</button>
     </div>
   </section>
