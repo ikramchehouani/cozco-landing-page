@@ -8,52 +8,92 @@
   src: url('../../../fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-.products {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
+.restaurant {
+  padding: 50px 50px 50px 0px;
   background-image: url('../../assets/pinky-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
   color: #fff;
+  text-align: center;
 }
 
-.products-content {
-  max-width: 50%;
-}
-
-.products-content h2 {
+.restaurant h2 {
   font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Cunia';
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.restaurant-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 70px 0;
+}
+
+.restaurant-content .restaurant-description {
+  max-width: 50%;
+  text-align: left;
+  padding: 0 20px;
+  font-family: 'Roboto';
+  margin-left: 15px;
+  position: relative;
+}
+
+.restaurant-content .restaurant-description h3 {
+  font-size: 24px;
   margin-bottom: 20px;
   font-family: 'Cunia';
   text-transform: uppercase;
 }
 
-.products-content p {
+.restaurant-content .restaurant-description p {
   margin: 20px 0;
   line-height: 1.6;
-  font-family: 'Roboto';
 }
 
-.products-button {
-  padding: 10px 20px;
-  background-color: #FABA05;
-  border: none;
+.restaurant-content .restaurant-description .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.restaurant-content .restaurant-description .social-icons .icon {
+  font-size: 24px;
   color: #fff;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  text-transform: uppercase;
 }
 
-.products-image img {
-  max-width: 100%;
+.restaurant-content .restaurant-description .social-icons .left-arrow,
+.restaurant-content .restaurant-description .social-icons .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.restaurant-content .restaurant-description .social-icons .left-arrow {
+  left: 0;
+}
+
+.restaurant-content .restaurant-description .social-icons .right-arrow {
+  right: 0;
+}
+
+.restaurant-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.restaurant-image img {
+  width: 100%;
   height: auto;
-  outline: 4px solid #FF038C;
-  outline-offset: -25px;
+  border-radius: 8px;
   box-sizing: border-box;
-  width: 400px;
 }
