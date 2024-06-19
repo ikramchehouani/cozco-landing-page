@@ -4,9 +4,9 @@ import './Order.css';
 const Order = () => (
   <section className="order-section">
     <div className="order-container">
-      <h2>PASSER COMMANDE</h2>
+      <h2>Passer commande</h2>
       <p>Vous souhaitez effectuer une commande de caissette de boisson, merci de remplir le formulaire.</p>
-      <p className="order-note">Pour rappel : les boissons ne sont pas vendus par unité et une caissette contient 16 bouteilles de 1 litres</p>
+      <p className="order-note">Pour rappel* : les boissons ne sont pas vendus par unité et une caissette contient 16 bouteilles de 1 litres</p>
       <form className="order-form">
         <div className="form-row">
           <div className="form-group">
@@ -25,14 +25,14 @@ const Order = () => (
           </div>
           <div className="form-group">
             <label htmlFor="caissettes">Nombre de caissettes*</label>
-            <input type="text" id="caissettes" name="caissettes" placeholder="1 caissettes de CHICHA MORADA - 1 LITRE" required />
+            <input type="text" id="caissettes" name="caissettes" placeholder="1 caissette de CHICHA MORADA - 1 LITRE" required />
           </div>
         </div>
-        <div className="form-group">
+        <div className="form-group full-width">
           <label htmlFor="message">Votre message*</label>
           <textarea id="message" name="message" placeholder="Votre message" required></textarea>
         </div>
-        <button type="submit" className="order-button">ENVOYER</button>
+        <button type="submit" className="order-button-submit">Envoyer</button>
       </form>
     </div>
   </section>
