@@ -1,0 +1,41 @@
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url('../../assets/pinky-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+  
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 65%; /* Adjusted to fit the design */
+  }
+  
+  .gallery-image {
+    width: 100%;
+    border: 5px solid #ff69b4;
+    box-sizing: border-box;
+  }
+  
+  .large-image {
+    grid-column: span 2;
+  }
+  
+  .gallery-alpaca {
+    max-width: 30%; /* Adjusted to fit the design */
+    display: flex;
+    align-items: center;
+  }
+  
+  .gallery-alpaca img {
+    max-width: 100%;
+    height: auto;
+  }
+  

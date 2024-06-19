@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Cunia';
+  src: url('../../../fonts/Cunia.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-image: url('../../assets/pinky-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.products-content {
+  max-width: 50%;
+}
+
+.products-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Cunia';
+  text-transform: uppercase;
+}
+
+.products-content p {
+  margin: 20px 0;
+  line-height: 1.6;
+  font-family: 'Roboto';
+}
+
+.products-button {
+  padding: 10px 20px;
+  background-color: #FABA05;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.products-image img {
+  max-width: 100%;
+  height: auto;
+  outline: 4px solid #FF038C;
+  outline-offset: -25px;
+  box-sizing: border-box;
+  width: 400px;
+}

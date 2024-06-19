@@ -1,0 +1,80 @@
+.order-section {
+    padding: 50px;
+    background-color: #D7385E; /* Replace with the color from your image */
+    color: #fff; /* White text for readability */
+    background-image: url('../../assets/order-background.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+  
+  .order-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .order-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .order-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .order-note {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .order-button {
+    padding: 10px 20px;
+    background-color: #FF69B4; /* Replace with the color from your image */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+  }
+  
