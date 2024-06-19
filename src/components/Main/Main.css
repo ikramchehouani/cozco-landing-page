@@ -33,6 +33,7 @@ body, html {
 .hero-content {
   max-width: 40%;
   color: #fff;
+  margin: 0 30px;
 }
 
 .hero-content h1 {
@@ -48,13 +49,13 @@ body, html {
 }
 
 .discover-button {
-  padding: 10px 20px;
-  background-color: #FABA05;
+  padding: 12px 30px;
+  background-color: #FF038C;
   border: none;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Roboto';
   text-transform: uppercase;
   font-weight: 500;
