@@ -106,3 +106,35 @@
   text-transform: uppercase;
   border-radius: 5px;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text, .image-container {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .text {
+    padding: 0 20px;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .image-container::before,
+  .image-container::after {
+    width: 50px;
+  }
+}
