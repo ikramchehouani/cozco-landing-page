@@ -58,3 +58,37 @@
   max-width: 100%;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .gallery-image {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .large-image {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .gallery-alpaca {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .gallery-alpaca img {
+    width: 100%;
+  }
+}
