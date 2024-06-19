@@ -6,14 +6,16 @@ const Navbar = () => (
     <div className="logo">
       <img src="/cozco-logo.png" alt="Cozco Chicha Morada" />
     </div>
-    <nav>
-      <ul>
-        <li>Accueil</li>
-        <li>Produits</li>
-        <li>Où nous trouver ?</li>
-      </ul>
-    </nav>
-    <button className="order-button">Passer commande</button>
+    <div className="nav-button-container">
+      <nav>
+        <ul>
+          <li>Accueil</li>
+          <li>Produits</li>
+          <li>Où nous trouver ?</li>
+        </ul>
+      </nav>
+      <button className="order-button">PASSER COMMANDE</button>
+    </div>
   </header>
 );
 

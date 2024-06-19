@@ -4,7 +4,7 @@ import chichaImage from '../../assets/about/colored-corn.png';
 
 const About = () => (
   <section className="info">
-    <h2>CHICHA MORADA, C’EST QUOI ?</h2>
+    <h2>Chicha Morada, c'est quoi ?</h2>
     <div className="content">
       <div className="text">
         <h3>TITRE</h3>
