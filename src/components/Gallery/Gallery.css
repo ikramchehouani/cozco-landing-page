@@ -1,41 +1,60 @@
+@font-face {
+  font-family: 'Cunia';
+  src: url('../../../fonts/Cunia.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 .gallery {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-image: url('../../assets/pinky-background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-  }
-  
-  .gallery-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 20px;
-    max-width: 65%;
-  }
-  
-  .gallery-image {
-    width: 100%;
-    border: 5px solid #ff69b4;
-    box-sizing: border-box;
-  }
-  
-  .large-image {
-    grid-column: span 2;
-  }
-  
-  .gallery-alpaca {
-    max-width: 30%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .gallery-alpaca img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0 50px;
+  background-image: url('../../assets/pinky-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 60%;
+}
+
+.gallery-image {
+  outline: 1px solid #FF038C;
+  outline-offset: -20px;
+  box-sizing: border-box;
+  width: 450px;
+  margin: 10px;
+}
+
+.gallery-images .small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.large-image {
+  grid-row: span 2;
+  width: 350px;
+}
+
+.gallery-alpaca {
+  max-width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.gallery-alpaca img {
+  max-width: 100%;
+  height: auto;
+}
