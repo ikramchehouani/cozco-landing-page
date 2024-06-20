@@ -10,7 +10,7 @@
 
 .restaurant {
   padding: 50px 50px 1px 0px;
-  background-image: url('../../assets/pinky-background.png');
+  background-image: url('../../assets/purple-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,7 +99,9 @@
   box-sizing: border-box;
 }
 
+/* Responsive styles */
 @media (min-width: 768px) {
+  
   .restaurant-content {
     flex-direction: row;
     justify-content: flex-start;
@@ -116,4 +118,17 @@
     max-width: 50%;
     margin-right: 20px;
   }
+
+  .restaurant {
+    padding: 40px 20px;
+    background-image: url('../../assets/purple-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+  }
+  
+
 }

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Cunia';
+    src: url('../../../fonts/Cunia.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../../../fonts/Roboto-Regular.ttf') format('truetype');
+  }
+  
+  .product-choices {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .product-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .product-item {
+    flex: 1;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    flex: 1;
+  }
+  
+  .product-image img {
+    width: 400px;
+  }
+  
+  .product-description {
+    /* flex: 1; */
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .product-description h2 {
+    font-family: 'Cunia';
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .product-description p {
+    font-family: 'Roboto';
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .product-choices {
+      padding: 20px;
+    }
+  
+    .product-row {
+      flex-direction: column;
+    }
+  
+    .product-description {
+      text-align: center;
+    }
+  
+    .product-description h2 {
+      font-size: 20px;
+    }
+  
+    .product-description p {
+      font-size: 14px;
+    }
+  }
+  
