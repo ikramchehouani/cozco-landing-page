@@ -9,10 +9,10 @@ const Gallery = () => (
   <section className="gallery">
     <div className="gallery-images">
       <div className="small-images">
-        <img src={firstImage} alt="Image 1" className="gallery-image" />
-        <img src={secondImage} alt="Image 2" className="gallery-image" />
+        <img src={firstImage} alt="2 bottles of Chicha Morada" className="gallery-image" />
+        <img src={secondImage} alt="Glass of Maracuya" className="gallery-image" />
       </div>
-      <img src={thirdImage} alt="Image 3" className="gallery-image large-image" />
+      <img src={thirdImage} alt="Bottle of Chicha Morada" className="gallery-image large-image" />
     </div>
     <div className="gallery-alpaca">
       <img src={alpaca} alt="Alpaca" />
