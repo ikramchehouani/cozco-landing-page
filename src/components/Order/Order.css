@@ -132,6 +132,26 @@ textarea {
   background-color: #FABA05;
 }
 
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:after {
+  content: attr(title);
+  color: red;
+  position: absolute;
+  border: 1px solid red;
+  padding: 2px;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  font-size: 0.875em;
+}
+
+input:invalid::placeholder {
+  color: red;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .order-section {

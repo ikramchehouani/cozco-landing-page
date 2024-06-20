@@ -127,7 +127,7 @@ const Order = () => {
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="email">E-mail*</label>
-              <input type="email" id="email" name="email" placeholder="Votre e-mail" value={formData.email} onChange={handleChange} required />
+              <input type="email" id="email" name="email" placeholder="Votre e-mail" value={formData.email} onChange={handleChange} required title="Enter a valid email address" />
             </div>
             <div className="form-group">
               <label htmlFor="telephone">Numéro de téléphone*</label>
