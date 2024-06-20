@@ -48,6 +48,7 @@
   margin-bottom: 20px;
   font-family: 'Cunia';
   font-size: 24px;
+  width: 70%;
 }
 
 .image-container {
@@ -77,8 +78,8 @@
 
 .image-container::after {
   background-image: url('../../assets/pink-splash.png');
-  bottom: -10px;
-  right: -20px;
+  bottom: 10px;
+  right: 400px;
   width: 100px;
 }
 
@@ -92,7 +93,7 @@
 }
 
 .learn-more-button {
-  padding: 12px 30px;
+  padding: 15px 30px;
   background-color: #FF038C;
   font-family: 'Roboto';
   font-weight: 500;
@@ -102,6 +103,7 @@
   margin-top: 20px;
   text-transform: uppercase;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 /* Responsive styles */
@@ -135,7 +137,7 @@
   .text h3 {
     font-size: 20px;
     text-align: center;
-
+    width: 100%;
   }
 
   .image-container img {
