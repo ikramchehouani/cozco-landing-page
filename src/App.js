@@ -11,6 +11,7 @@ import Gallery from './components/Gallery/Gallery';
 import Order from './components/Order/Order';
 import ProductPage from './components/Product/ProductPage';
 import './App.css';
+import RestaurantPage from './components/Restaurant/RestaurantPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             </>
           } />
           <Route path="/boissons" element={<ProductPage />} />
+          <Route path="/restaurants" element={<RestaurantPage />} />
         </Routes>
         <Footer />
       </div>
