@@ -58,9 +58,11 @@
 
 .restaurant-content .restaurant-description .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .restaurant-content .restaurant-description .social-icons .icon {
