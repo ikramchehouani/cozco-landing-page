@@ -26,6 +26,7 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div>
+      {menuOpen && <div className="overlay" onClick={closeMenu}></div>}
       <div className={`nav-button-container ${menuOpen ? 'open' : ''}`}>
         <nav>
           <ul>
