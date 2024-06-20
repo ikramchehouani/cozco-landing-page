@@ -1,71 +1,71 @@
-# Getting Started with Create React App
+# Cozco Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a new version for the Cozco website.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To get a local copy up and running follow these simple steps.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (v14.x or later)
+- npm (v6.x or later)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   git clone https://github.com/ikramchehouani/cozco-landing-page.git
 
-### `npm run build`
+2. Navigate to the project directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    cd cozco-website
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install NPM packages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm install
 
-### `npm run eject`
+### Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a .env file in the root of your project and add the following variables:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    REACT_APP_EMAIL_JS_SERVICE_ID='your_emailjs_service_id'
+    REACT_APP_EMAIL_JS_TEMPLATE_ID='your_emailjs_template_id'
+    REACT_APP_EMAIL_JS_USER_ID='your_emailjs_user_id'
+    REACT_APP_BACKEND_URL='your_backend_url'
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Make sure to replace your_emailjs_service_id, your_emailjs_template_id, your_emailjs_user_id, and your_backend_url with your actual EmailJS service ID, template ID, user ID, and backend URL.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Usage
 
-## Learn More
+1. Start the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will run the app in development mode. Open http://localhost:3000 to view it in your browser.
 
-### Code Splitting
+The page will reload when you make changes. You may also see any lint errors in the console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Build the app for production
 
-### Analyzing the Bundle Size
+    npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This will build the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Making a Progressive Web App
+### Using EmailJS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project uses EmailJS to send emails directly from the client-side.
 
-### Advanced Configuration
+To configure EmailJS:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Sign up for an account on EmailJS.
+    Create an email service, email template, and obtain your user ID.
+    Add your EmailJS credentials (service ID, template ID, and user ID) to your .env file as mentioned above.
+    For detailed documentation, refer to the EmailJS Documentation.
 
-### Deployment
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Distributed under the MIT License. See LICENSE for more information.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> master
+### Contact
+Ikram Chehouani - ikram_chehouani@outlook.fr
