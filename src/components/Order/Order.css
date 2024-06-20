@@ -131,7 +131,7 @@ textarea {
 /* Responsive styles */
 @media (max-width: 768px) {
   .order-section {
-    padding: 20px;
+    padding: 50px 20px;
     height: auto;
   }
 
@@ -166,4 +166,9 @@ textarea {
   .order-button {
     width: 100%;
   }
+
+  .order-button-submit {
+    margin-top: 0;
+  }
+
 }
