@@ -50,6 +50,11 @@
   font-weight: 500;
 }
 
+.products-button:hover {
+  background-color: #FABA05;
+}
+
+
 .products-image img {
   max-width: 100%;
   height: auto;

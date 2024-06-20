@@ -64,6 +64,10 @@ body, html {
   display: inline-block;
 }
 
+.discover-button:hover {
+  background-color: #FABA05;
+}
+
 .hero-image {
   display: flex;
   align-items: center;
