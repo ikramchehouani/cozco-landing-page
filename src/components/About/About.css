@@ -66,23 +66,20 @@
   background-repeat: no-repeat;
   width: 420px;
   height: 100%;
-  /* z-index: 1; */
 }
 
 .image-container::before {
   background-image: url('../../assets/pink-splash.png');
-  top: 14px;
-  left: -94px;
+  top: 3px;
+  left: -25px;
   width: 100px;
-  /* z-index: -2; */
 }
 
 .image-container::after {
   background-image: url('../../assets/pink-splash.png');
-  bottom: -49px;
-  right: 0px;
+  bottom: -10px;
+  right: -20px;
   width: 100px;
-  /* z-index: -1; */
 }
 
 .image-container img {
@@ -95,7 +92,7 @@
 }
 
 .learn-more-button {
-  padding: 12px 25px;
+  padding: 12px 30px;
   background-color: #FF038C;
   font-family: 'Roboto';
   font-weight: 500;
@@ -109,6 +106,15 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+
+  .info {
+    padding: 40px 20px;
+  }
+
+  .info h2 {
+    font-size: 26px;
+  }
+
   .content {
     flex-direction: column;
     align-items: center;
@@ -116,8 +122,9 @@
 
   .text, .image-container {
     max-width: 100%;
-    text-align: center;
-    margin: 0;
+    font-size: 16px;
+    text-align: justify;
+    /* margin: 20px 0; */
     padding: 20px 0;
   }
 
@@ -127,6 +134,8 @@
 
   .text h3 {
     font-size: 20px;
+    text-align: center;
+
   }
 
   .image-container img {
@@ -136,5 +145,11 @@
   .image-container::before,
   .image-container::after {
     width: 50px;
+  }
+
+  .learn-more-button {
+    display: block;
+    margin: 30px auto 30px auto;
+    font-size: 15px;
   }
 }

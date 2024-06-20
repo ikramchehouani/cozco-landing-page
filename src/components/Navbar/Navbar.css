@@ -49,6 +49,8 @@ nav ul li {
   font-size: 16px;
   margin-left: 50px;
   font-family: 'Roboto Condensed';
+  color: #960061;
+  font-weight: bold;
 }
 
 .order-button {
@@ -74,9 +76,9 @@ nav ul li {
 
 .menu-toggle div {
   width: 30px;
-  height: 5px;
+  height: 4px;
   background-color: #B8005C;
-  margin: 5px 0;
+  margin: 3px 0;
 }
 
 @media (max-width: 768px) {
@@ -90,7 +92,7 @@ nav ul li {
 
   .header {
     justify-content: space-between;
-    padding: 18px 40px;
+    padding: 20px 40px;
   }
 
   .header.active .nav-button-container {
