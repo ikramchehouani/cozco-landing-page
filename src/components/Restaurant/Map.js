@@ -16,7 +16,7 @@ Leaflet.Marker.prototype.options.icon = DefaultIcon;
 const MapSection = () => {
   const locations = [
 
-    { lat: 48.8588443, lng: 2.2943506, name: "Eiffel Tower" },
+    { lat: 48.875800, lng: 2.315670, name: "Mikuna" },
   ];
 
   return (
