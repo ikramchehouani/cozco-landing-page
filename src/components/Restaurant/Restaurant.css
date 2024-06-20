@@ -9,7 +9,7 @@
 }
 
 .restaurant {
-  padding: 50px 50px 1px 0px;
+  padding: 50px 20px;
   background-image: url('../../assets/purple-background.png');
   background-size: cover;
   background-position: center;
@@ -33,16 +33,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 70px 0;
+  margin: 30px 0;
 }
 
 .restaurant-content .restaurant-description {
-  max-width: 50%;
-  text-align: left;
+  max-width: 100%;
+  text-align: center;
   padding: 0 20px;
   font-family: 'Roboto';
-  margin-left: 15px;
-  position: relative;
+  margin: 20px 0;
 }
 
 .restaurant-content .restaurant-description h3 {
@@ -62,7 +61,6 @@
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
-  position: relative;
 }
 
 .restaurant-content .restaurant-description .social-icons .icon {
@@ -71,25 +69,10 @@
   cursor: pointer;
 }
 
-.restaurant-content .restaurant-description .social-icons .left-arrow,
-.restaurant-content .restaurant-description .social-icons .right-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.restaurant-content .restaurant-description .social-icons .left-arrow {
-  left: 0;
-}
-
-.restaurant-content .restaurant-description .social-icons .right-arrow {
-  right: 0;
-}
-
 .restaurant-image {
   width: 100%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .restaurant-image img {
@@ -101,34 +84,20 @@
 
 /* Responsive styles */
 @media (min-width: 768px) {
-  
   .restaurant-content {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
 
   .restaurant-content .restaurant-description {
-    max-width: 50%;
+    max-width: 45%;
     text-align: left;
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .restaurant-image {
-    max-width: 50%;
-    margin-right: 20px;
+    max-width: 45%;
+    margin: 0;
   }
-
-  .restaurant {
-    padding: 40px 20px;
-    background-image: url('../../assets/purple-background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    color: #fff;
-    text-align: center;
-  }
-  
-
 }
