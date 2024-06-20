@@ -10,6 +10,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={`header ${menuOpen ? 'active' : ''}`}>
       <div className="logo">
@@ -22,20 +26,25 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div>
-      <div className="nav-button-container">
+      <div className={`nav-button-container ${menuOpen ? 'open' : ''}`}>
         <nav>
           <ul>
             <li>
-              <Link to="/boissons">Boissons</Link>
+              <Link to="/boissons" onClick={closeMenu}>Boissons</Link>
             </li>
             <li>
-              <Link to="/restaurants">Où nous trouver ?</Link>
+              <Link to="/restaurants" onClick={closeMenu}>Où nous trouver ?</Link>
             </li>
           </ul>
         </nav>
-        <ScrollLink to="order" smooth={true} duration={700} className="order-button">
+        <ScrollLink to="order" smooth={true} duration={700} className="order-button" onClick={closeMenu}>
           Passer commande
         </ScrollLink>
+        {menuOpen && (
+          <button className="close-button" onClick={closeMenu}>
+            X
+          </button>
+        )}
       </div>
     </header>
   );
