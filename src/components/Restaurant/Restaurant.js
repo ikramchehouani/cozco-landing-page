@@ -14,11 +14,23 @@ const Restaurant = () => (
       </div>
       <div className="restaurant-description">
         <h3>Mikuna</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>
+          Chaîne de restaurants spécialisée dans la cuisine du Pérou et d’Amérique latine.
+        </p>
+        <p>
+          • 57 Rue de Miromesnil 75008 Paris
+        </p>
+        <p>
+          • 140 Rue Montmartre 75002 Paris
+        </p>
         <div className="social-icons">
           <FontAwesomeIcon icon={faArrowLeft} className="icon left-arrow" />
-          <FontAwesomeIcon icon={faInstagram} className="icon" />
-          <FontAwesomeIcon icon={faFacebook} className="icon" />
+          <a href="https://www.instagram.com/mikunaparis/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+          </a>
+          <a href="https://www.facebook.com/Mikunaparis" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} className="icon" />
+          </a>
           <FontAwesomeIcon icon={faArrowRight} className="icon right-arrow" />
         </div>
       </div>

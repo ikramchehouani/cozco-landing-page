@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -11,7 +13,9 @@ const Navbar = () => {
   return (
     <header className={`header ${menuOpen ? 'active' : ''}`}>
       <div className="logo">
-        <img src="/cozco-logo.png" alt="Cozco Chicha Morada logo" />
+        <Link to="/" className="logo">
+          <img src="/cozco-logo.png" alt="Cozco Chicha Morada logo" />
+        </Link>
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>
         <div></div>
@@ -21,11 +25,17 @@ const Navbar = () => {
       <div className="nav-button-container">
         <nav>
           <ul>
-            <li>Produits</li>
-            <li>Où nous trouver ?</li>
+            <li>
+              <Link to="/boissons">Boissons</Link>
+            </li>
+            <li>
+              <Link to="/restaurants">Où nous trouver ?</Link>
+            </li>
           </ul>
         </nav>
-        <button className="order-button">Passer commande</button>
+        <ScrollLink to="order" smooth={true} duration={700} className="order-button">
+          Passer commande
+        </ScrollLink>
       </div>
     </header>
   );

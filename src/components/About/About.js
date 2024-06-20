@@ -1,9 +1,10 @@
 import React from 'react';
 import './About.css';
 import chichaImage from '../../assets/about/colored-corn.png';
+import { Link } from 'react-scroll';
 
 const About = () => (
-  <section className="info">
+  <section id="about" className="info">
     <h2>Chicha Morada, c'est quoi ?</h2>
     <div className="content">
       <div className="text">
@@ -14,7 +15,9 @@ const About = () => (
         <p>
           Faite à base de fruits, de cannelle, de clou de girofle et surtout de maïs violet récolté dans les montagnes des Andes, son goût unique vous fera voyager à chaque gorgée !
         </p>
-        <button className="learn-more-button">En savoir plus</button>
+        <Link to="about" smooth={true} duration={500} className="learn-more-button">
+          En savoir plus
+        </Link>
       </div>
       <div className="image-container">
         <img src={chichaImage} alt="Chicha Morada" />

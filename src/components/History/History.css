@@ -2,9 +2,13 @@
     padding: 50px;
     background-color: #fff;
     text-align: center;
-  }
+}
   
-  .history h2 {
+.history h2 {
     font-size: 36px;
-  }
+}
+
+.text h3{
+  width: inherit;
+}
   

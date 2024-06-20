@@ -2,7 +2,7 @@ import React from 'react';
 import './Order.css';
 
 const Order = () => (
-  <section className="order-section">
+  <section id="order" className="order-section">
     <div className="order-container">
       <h2>Passer commande</h2>
       <p>Vous souhaitez effectuer une commande de caissette de boisson, merci de remplir le formulaire.</p>
