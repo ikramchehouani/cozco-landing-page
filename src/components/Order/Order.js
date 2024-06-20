@@ -5,15 +5,16 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Order.css';
 
 const Order = () => {
+
   const [formData, setFormData] = useState({
     name: '',
     prenom: '',
     adresse: '',
     email: '',
     telephone: '',
-    boisson: '',
+    boisson: 'chicha-morada',
     caissettes: '1',
-    bouteilles: '16 bouteilles 1l',
+    bouteilles: '16 bouteilles 1L',
     message: '',
     date: '',
     time: ''
@@ -24,7 +25,7 @@ const Order = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const currentDate = new Date();
@@ -37,31 +38,67 @@ const Order = () => {
       time
     };
 
-    emailjs.send(
-      'service_cozco_2glxt2g',
-      'template_qj2yvy6',
-      formDataWithDateTime,
-      'GrqY7nKVhCnvqc8Hm'
-    ).then((response) => {
-      toast.success('Email sent successfully!');
-      
+    //todo
+    //fetch dynamically the id of the article by type
+    //for the moment this is the id in db
+    const articleId = formData.boisson === 'chicha-morada' ? '6671c33d4f0ed6804c0741b0' : '6673f9696c801572f4782d8a';
+
+    try {
+
+      await emailjs.send(
+        process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
+        formDataWithDateTime,
+        process.env.REACT_APP_EMAIL_JS_USER_ID
+      );
+
+      const payload = {
+        firstName: formData.prenom,
+        lastName: formData.name,
+        phoneNumber: formData.telephone,
+        address: formData.adresse,
+        comment: formData.message,
+        items: [
+          {
+            articleId: articleId,
+            packageType: formData.bouteilles,
+            quantity: parseInt(formData.caissettes, 10)
+          }
+        ]
+      };
+
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/commande`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      toast.success('Merci. Notre équipe vous contactera le plus tôt possible.');
+
       setFormData({
         name: '',
         prenom: '',
         adresse: '',
         email: '',
         telephone: '',
-        boisson: '',
+        boisson: 'chicha-morada',
         caissettes: '1',
-        bouteilles: '16 bouteilles 1l',
+        bouteilles: '16 bouteilles 1L',
         message: '',
         date: '',
         time: ''
       });
-    }).catch((error) => {
-      toast.error('There was an error sending the email!');
-      console.error('EmailJS Error:', error);
-    });
+
+    } catch (error) {
+      toast.error('Demande échouée. Veuillez réessayez !');
+      console.error('Error:', error);
+    }
   };
 
   return (
@@ -118,7 +155,7 @@ const Order = () => {
             <div className="form-group">
               <label htmlFor="bouteilles">Nombre de bouteilles*</label>
               <select id="bouteilles" name="bouteilles" value={formData.bouteilles} onChange={handleChange} required>
-                <option value="16 bouteilles 1l">16</option>
+                <option value="16 bouteilles 1L">16</option>
                 <option value="32 bouteilles 50cl">32</option>
               </select>
             </div>
