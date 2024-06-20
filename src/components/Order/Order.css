@@ -135,6 +135,10 @@ textarea {
     height: auto;
   }
 
+  .order-section p {
+    font-weight: bold;
+  }
+
   .order-container {
     max-width: 100%;
     padding: 0 10px;
@@ -169,6 +173,7 @@ textarea {
 
   .order-button-submit {
     margin-top: 0;
+    margin-bottom: 20px;
   }
 
 }
