@@ -132,7 +132,7 @@ textarea {
   background-color: #FABA05;
 }
 
-input:invalid {
+/* input:invalid {
   border: 2px solid red;
 }
 
@@ -150,7 +150,7 @@ input:invalid:after {
 
 input:invalid::placeholder {
   color: red;
-}
+} */
 
 /* Responsive styles */
 @media (max-width: 768px) {
